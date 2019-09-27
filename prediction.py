@@ -99,6 +99,6 @@ class Prediction:
                             (userID in self.context and 'context_filter' in i and i['context_filter'] == self.context[userID]):
                             if show_details: print ('tag:', i['tag'])
                             # a random response from the intent
-                            return random.choice(i['responses'])
+                            return random.choice(i['responses']) + ' :meow_party:'
 
                 results.pop(0)
